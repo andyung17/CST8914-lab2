@@ -2,40 +2,21 @@
 <html lang="en">
 
 <head>
-  <title>Question 3- CSS & HTML</title>
-  <style>
-    .button {
-      background-color: #4CAF50;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
+  <title>Question 4 - JavaScript</title>
 
-    body {
-      padding: 20px;
-      background-color: #2f2f2f;
-    }
-
-    h1, h2, p {
-      color: black;
-    }
-  </style>
 </head>
 
 <body>
-  
-  <h1>HTML made Easy</h1>
+  <h1>HTML DOM Events</h1>
+  <p>Trigger a function on hover or focus that will output "Hello World":</p>
 
-  <p>What causes errors in HTML?</p>
-
-  <div class="button">Submit answers</div>
-
+  <button onmouseover="myFunction()" onfocus="myFunction()">Action!</button>
+  <p id="demo"></p>
 </body>
+<script>  
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+  }
+</script>
 
 </html>
